@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Anniversary ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🎵 BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<div id="container">
+
+    <!-- SCRATCH TEXT -->
+    <div id="hint">
+        Scratch to Reveal ❤️
+        <p style="font-size:20px;">My Dear Ranigaru 💖</p>
+    </div>
+
+    <!-- REVEAL PAGE -->
+    <div id="reveal" class="section">
+        <div class="card">
+            <h1>Happy Anniversary Sreemati garu ❤️</h1>
+            <p>Being with you makes even simple moments beautiful 💫</p>
+            <p>You turn my life into a wonderful adventure 💖</p>
+
+            <!-- ▶️ START MUSIC HERE -->
+            <button class="btn" onclick="goFinal(); playMusic()">
+                ENTER OUR WORLD
+            </button>
+        </div>
+    </div>
+
+    <!-- FINAL PAGE -->
+    <div id="finalPage" class="section">
+        <div class="final-card">
+
+            <h2 class="title">Happy Anniversary My Dear ❤️</h2>
+
+            <div class="photo-frame">
+
+                <img src="img1.jpeg">
+
+                <div class="center-box">
+                    <div class="center-text">
+                        The day you came into my life, everything turned into something beautiful ❤️<br>
+                        You became the light in my darkest moments 💫<br>
+                        With you, every second feels special and meaningful ✨<br>
+                        You are my happiness, my peace, my forever 🌸<br>
+                        You are not just my love… you are my everything ❤️<br>
+                        Caring like a mother 🤱,<br>
+                        Protecting like a father 🛡️,<br>
+                        Guiding like a teacher 📚,<br>
+                        Standing beside me like a true friend 🤝,<br>
+                        Thankyou for coming into my life ❤️<br>
+                        ❤️ I LOVE YOU SO MUCH MAA ❤️
+                    </div>
+
+                    <div class="center-buttons">
+                        <button class="nav-btn" onclick="goBack()">← Home</button>
+                        <button class="nav-btn" onclick="goStory()">Next →</button>
+                    </div>
+                </div>
+
+                <img src="img2.jpeg">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- STORY PAGE -->
+    <div id="storyPage" class="section">
+        <div class="story-card">
+
+            <h2 class="story-title">Sreemathi Garu ❤️</h2>
+
+            <p>This is the First time hearing from Your side after 5 months</p>
+            <p class="date">July 26, 2025</p>
+
+            <img src="img3.jpeg" class="story-img">
+
+            <div class="buttons">
+                <button class="nav-btn" onclick="backToFinal()">← Back</button>
+                <button class="nav-btn" onclick="goFinalSurprise()">Next →</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FINAL SURPRISE -->
+    <div id="finalSurprise" class="section">
+        <canvas id="sparkCanvas"></canvas>
+
+        <div class="surprise-card">
+            <img src="img4.jpeg" class="profile">
+
+            <h1>Happy Anniversary ❤️</h1>
+
+            <p>You mean everything to me and make my life complete ❤️</p>
+            <p>With you, I feel happy, peaceful, and loved 💖</p>
+            <p>You are the most important person in my life 🌸</p>
+
+            <button class="btn" onclick="goVideo()">
+                I LOVE YOU BANGARAM ❤️
+            </button>
+        </div>
+    </div>
+
+    <!-- VIDEO PAGE -->
+    <div id="videoPage" class="section">
+
+        <video id="loveVideo" controls autoplay>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-buttons">
+            <button class="nav-btn" onclick="backToFinalSurprise()">← Back</button>
+        </div>
+
+    </div>
+
+    <!-- SCRATCH -->
+    <canvas id="scratchCanvas"></canvas>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
